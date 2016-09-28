@@ -1,0 +1,25 @@
+<figure class='smiles-fig'>
+  <img class='img-smiles' src='/assets/images/smilies.png'></img>
+</figure>
+<h1 class='target-title'>TARGET MVD</h1>
+<h2 class='target-subtitle'> Find people near you &amp; Connect </h2>
+<div class='description-div'>
+  <p class='target-description'> Create a target wherever on the map, specify your interest: Travel, Music, Dating, etc and start connecting with others who share your interest </p>
+</div>
+<form class='signin-form' ng-submit="signinCtrl.submit()" name="signinForm">
+  <label class='signin-label'>EMAIL</label>
+  <input class='signin-input' type="text" ng-model="signinCtrl.user.email">
+  <label class='signin-label'>PASSWORD</label>
+  <input class='signin-input' type="password" ng-model="signinCtrl.user.password">
+  <input class='signin-button' type="submit" id='Submit' value='SIGN IN'>
+</form>
+<div class='password-forgot'>
+  <a>Forgot your password?</a>
+</div>
+<div class='facebook-connect'>
+  <a>CONNECT WITH FACEBOOK</a>
+</div>
+<hr class='separator-bar-sign-in'>
+<div class='sign-up-access'>
+  <a ui-sref="sign_up"> SIGN UP </a>
+</div>

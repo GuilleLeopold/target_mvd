@@ -1,0 +1,98 @@
+.signin-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-label{
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  margin-top: 5%;
+}
+
+.signin-input{
+  height: 37px;
+  width: 45%;
+  text-align: center;
+  margin-bottom: 5%;
+  border: solid 0.5px #000000;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+
+.signin-button{
+  height: 37px;
+  width: 45%;
+  background-color: #000000;
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  color: #ffffff;
+  padding: 0;
+  border: #ffffff;
+}
+
+.target-title{
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.target-subtitle{
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.div-description{
+  text-align: center;
+}
+
+.target-description{
+  width: 65%;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 auto 10% auto;
+}
+
+
+.password-forgot{
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  margin: 5%;
+}
+
+.facebook-connect{
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #000000;
+  margin-top: 15%;
+}
+
+.sign-up-access{
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+
+.separator-bar-sign-in{
+  width: 30%;
+  height: 0.5px;
+  background-color: #000000;
+  margin-bottom: 5%;
+}

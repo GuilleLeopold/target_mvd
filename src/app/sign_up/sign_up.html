@@ -1,0 +1,27 @@
+
+<h1 class='signup-title'>SIGN UP</h1>
+<form class='signup-form' ng-submit="signupForm.$valid && signupCtrl.submit()" name="signupForm" novalidate>
+  <label class='signup-label'>NAME</label>
+  <input class='signup-input' type="text" name='name' ng-model="signupCtrl.user.name" required>
+  <span class='error-message' ng-show="signupForm.$submitted && signupForm.name.$error.required">Name is required</span>
+  <label class='signup-label'>EMAIL</label>
+  <input class='signup-input' type="email" name='email' ng-model="signupCtrl.user.email" required>
+  <span class='error-message' ng-show="signupForm.$submitted && (signupForm.email.$error.required || signupForm.email.$error.email)">Invalid email</span>
+  <label class='signup-label'>PASSWORD</label>
+  <input class='signup-input' placeholder="MIN. 8 CHARACTERS LONG" type="password" name='password' ng-model="signupCtrl.user.password" required minlength=8>
+  <span class='error-message' ng-show="signupForm.$submitted && signupForm.password.$error.required">Invalid password, at least 8 characters are required</span>
+  <label class='signup-label'>CONFIRM PASSWORD</label>
+  <input class='signup-input' ng-model="signupCtrl.user.confirmation_password" type="password" match="signupCtrl.user.password" name='passConfirmation' required/>
+  <span class='error-message' ng-show="signupForm.$submitted && signupForm.passConfirmation.$error.required">Password doesn't match</span>
+  <label class='signup-label'>GENDER</label>
+
+  <select2 ng-model="signupCtrl.user.gender" s2-options="val.name for val in genders"></select2>
+
+<!--   <select ng-model="signupCtrl.user.gender" name='gender' required>
+    <option disabled selected value> select a gender </option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select> -->
+  <span class='error-message' ng-show="signupForm.$submitted && signupForm.gender.$error.required">Gender required</span>
+  <input class='signup-button' type="submit" id='Submit' value='Sign up'>
+</form>

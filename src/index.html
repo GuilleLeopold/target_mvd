@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>TargetMVD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="http://fountainjs.io/assets/imgs/fountain.png" />
+    <!-- <script src="bower_components/angular-select2/dist/angular-select2.min.js"></script> -->
+  </head>
+  <body ng-app="app">
+    <div class='main-flex'>
+      <div class='left-block'>
+        <header ng-click="show=!show" ng-init="show=false">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="options" ng-show="show">
+            <p>About</p>
+            <p>CONTACT</p>
+          </div>
+        </header>
+          <div class='left-flexbox'>
+            <ui-view>
+            </ui-view>
+          </div>
+      </div>
+      <div class='right-block'>
+        <figure class='figure-container iphone-fig'>
+          <img class='img-iphone' src='/assets/images/i-6.png'/>
+        </figure>
+        <figure class='figure-container appstore-fig'>
+          <img src='/assets/images/appstore-button.png'/>
+        </figure>
+        <div class='figure-container social-container'>
+          <figure class='social-icon facebook-fig'>
+            <img src='/assets/images/facebook.png'/>
+          </figure>
+          <figure class='social-icon twitter-fig'>
+            <img src='/assets/images/twitter.png'/>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

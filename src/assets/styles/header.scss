@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  position: relative;
+
+  span {
+    display: inline-block;
+    border: 1px solid black;
+    width: 20px;
+
+    + span { margin-top: 4px; }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .options {
+    position: absolute;
+    left: 30px;
+    top: 0;
+  }
+
+  p {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  p + p {
+    margin-top: 20px;
+  }
+}
